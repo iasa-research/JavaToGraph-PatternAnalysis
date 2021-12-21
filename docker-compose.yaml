@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+    iasa_javatograph_patternanalysis:
+      image: javatograph_patternanalysis:latest
+      container_name: iasa_javatograph_patternanalysis
+      restart: unless-stopped
+      ports:
+        - 5000:5000
+      command: "python3 projectRestAPI.py"
