@@ -31,7 +31,7 @@ docker build -t javatograph_patternanalysis  .
 ### create container from the image 
 
 ```
-docker run -p 5000:5000/tcp -d iasagetprojectdata python3 projectRestAPI.py
+docker run -p 5000:5000/tcp -d javatograph_patternanalysis python3 projectRestAPI.py
 ```
 
 * the commands exposes the application to the outside world using the port flag -p 
@@ -62,8 +62,3 @@ cd /var/lib/docker/containers`
 * use `docker ps` to find the container you want to analyse the logs for
 * in the folder: `cd <containername>`
 * there should be the log for the container 
-docker run -p 5000:5000/tcp iasagetprojectdata python3 projectRestAPI.py
-```
-* jetzt können von außen Befehle über REST gesendet werden und der Output der Komponente wird im Terminal ausgegeben 
-* Nach Fehlerbehebung die strg+c (Container wird dann gelöscht) und dann Container wie oben beschrieben als Deamon neuerstellen 
-
