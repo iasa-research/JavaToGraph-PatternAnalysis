@@ -5,6 +5,10 @@
 * DependencyAnalysis.jar and postgreSQLconfig.ini
 * request from the IASA-leaders and copy both in the control package (see also README.md in the control package)
 
+## Depends on other services
+* iasa-global database
+* iasa neo4j project databases
+
 ## Docker-Image 
 ### Description
 This image contains an environment to deploy the `JavaToGraph`-IASA component for pattern validation usages, which pulls java project data from its git repository and writes the classes and their dependencies as graph in a neo4j graph database.
